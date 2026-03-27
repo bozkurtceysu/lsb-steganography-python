@@ -79,7 +79,7 @@ def mse_psnr_hesapla(orijinal_yol, stego_yol):
 print("--- Steganografi Testi Başlıyor ---")
 
 # Veriyi Gömelim
-manuel_lsb_gomme("/content/IMG_8045.JPG", "LSB Steganografi Testi!", "stego_test.png")
+manuel_lsb_gomme("IMG_8045.JPG", "LSB Steganografi Testi!", "stego_test.png")
 
 # Veriyi Geri Çıkaralım
 bulunan_mesaj = manuel_lsb_cikarma("stego_test.png")
@@ -87,4 +87,4 @@ print(f"Resimden Çıkarılan Gizli Mesaj: {bulunan_mesaj}")
 
 # Kaliteyi Ölçelim
 print("\n--- Matematiksel Kalite Ölçümü ---")
-mse_psnr_hesapla("/content/IMG_8045.JPG", "stego_test.png")
+mse_psnr_hesapla("IMG_8045.JPG", "stego_test.png")
